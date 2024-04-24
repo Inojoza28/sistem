@@ -12,11 +12,11 @@ $("body").on("click", ".nightmare", function () {
 
 /*===================================================== */
 
-var tempoLimite = 22000; // Tempo limite em milissegundos (10 segundos)
+var tempoLimite = 20000; // Tempo limite em milissegundos (10 segundos)
 
 // Função para iniciar o jogo
 function NextRound() {
-    $('#roundcheck').html(1); // Definindo a rodada como 1
+    $('#roundcheck').html(); // Definindo a rodada como 1
     var Fakers = 30; // Definindo a quantidade de palavras falsas como 30
     $('#terminal').hide().html(BuildPasswords(makeid(7), Fakers)).fadeIn(); // Começando com 3 letras
 
