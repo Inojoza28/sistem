@@ -17,7 +17,7 @@ var tempoLimite = 20000; // Tempo limite em milissegundos (10 segundos)
 // Função para iniciar o jogo
 function NextRound() {
     $('#roundcheck').html(); // Definindo a rodada como 1
-    var Fakers = 30; // Definindo a quantidade de palavras falsas como 30
+    var Fakers = 49; // Definindo a quantidade de palavras falsas como 30
     $('#terminal').hide().html(BuildPasswords(makeid(7), Fakers)).fadeIn(); // Começando com 3 letras
 
     // Definir o tempo limite e redirecionar após o tempo expirar
